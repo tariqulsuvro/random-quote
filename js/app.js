@@ -22,11 +22,6 @@ function bodyBackGroud (){
     
 }
 
-btnClick.addEventListener("click",bodyBackGroud);
-
-
-
-
 var quotes = [
     { quote: "The biggest risk is not taking any risk... In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks.",
       source: 'Mark Zuckerberg',
@@ -69,7 +64,6 @@ var quotes = [
   ];
   
   
-  
   /*
   choose and then return a random quote
   object from the array
@@ -94,9 +88,6 @@ var quotes = [
     return randomQuote;
   }
   
-  
-  
-  
   // I created a second function and  gave it (printQuote) as its name.
   function printQuote() {
     var message = "";   // This is the message variable with empty strings
@@ -112,10 +103,7 @@ var quotes = [
        quoteBox.innerHTML = message;
   }
   
-
-  
-  
-  
   // This event listener will respond to "Show another quote" button clicks
   // when user clicks anywhere on the button, the "printQuote" function is called
   btnClick.addEventListener("click", printQuote, false);
+  btnClick.addEventListener("click",bodyBackGroud);
